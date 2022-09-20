@@ -1,13 +1,14 @@
-function prime(num){
-let count=0
-for(let i=1;i<num;i++){
+function prime(number){
+let factors=0
+for(let i=1;i<=number;i++){
     if(num%i==0){
-        count++
+        factors++
     }
 }
-if(count==0){
-    return true
+if(factors==2){
+    return 'Prime Number'
 }
-return false
+return 'Not Prime Number'
 
 }
+
